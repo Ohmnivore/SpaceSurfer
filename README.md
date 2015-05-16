@@ -19,7 +19,7 @@ that it's as fast as the other kids in town, but until then it will be using
 WebKit. I'll do some speed tests and post actual data one day.
 
 On Windows the browser is rather laggy, but on Linux (Debian, GNOME) it's blazing
-fast. I have no idea why ¯\_(ツ)_/¯.
+fast. I have no idea why ¯\\\_(ツ)_/¯.
 
 # Build settings
 * Python 2.7
