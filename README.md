@@ -29,7 +29,7 @@ fast. I have no idea why ¯\\\_(ツ)_/¯.
 * Check out QWebSettings
 * History menu
 
-#TODO - long-term
+# TODO - long-term
 * Recent tabs menu
 * Bookmarks
 * Zoom
