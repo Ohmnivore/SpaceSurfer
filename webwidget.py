@@ -27,8 +27,13 @@ class WebWidget(QObject):
         layout.addWidget(self.web)
 
     # Browser ops
+    def parseUrl(self, url):
+        if url.scheme() == '':
+            url.setScheme('http')
+        return url
+
     def setUrl(self, url):
-        self.web.load(url)
+        self.web.setUrl(self.parseUrl(url))
 
     def getUrl(self):
         return self.web.url()
@@ -66,3 +71,4 @@ class WebWidget(QObject):
         self.adjustTitle()
         self.inTab.setBtnRefresh()
         self.inTab.setTabIcon(self.getIcon())
+        self.inTab.ui.urlLine.setText(self.getUrl().toString())
