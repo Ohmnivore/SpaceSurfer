@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="prevBtn">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="gui.qrc">
+         <normaloff>:/icons/assets/images/dark/appbar.chevron.left.png</normaloff>:/icons/assets/images/dark/appbar.chevron.left.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="nextBtn">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="gui.qrc">
+         <normaloff>:/icons/assets/images/dark/appbar.chevron.right.png</normaloff>:/icons/assets/images/dark/appbar.chevron.right.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="urlLine">
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="refreshBtn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="gui.qrc">
+         <normaloff>:/icons/assets/images/dark/appbar.refresh.png</normaloff>:/icons/assets/images/dark/appbar.refresh.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="gui.qrc">
+         <normaloff>:/icons/assets/images/dark/appbar.star.png</normaloff>:/icons/assets/images/dark/appbar.star.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="gui.qrc">
+         <normaloff>:/icons/assets/images/dark/appbar.rocket.rotated.45.png</normaloff>:/icons/assets/images/dark/appbar.rocket.rotated.45.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

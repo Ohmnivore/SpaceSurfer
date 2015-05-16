@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Space Surfer, yo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/ico/assets/icons/icon.png</normaloff>:/ico/assets/icons/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton, QTabBar::tab, QMenu, QTabBar QToolButton {
+	background-color: #1d1d1d;
+	color: white;
+	border: none;
+	
+	font-family: &quot;Gisha&quot;;
+	font-weight: bold;
+	font-size:14px;
+}
+QPushButton:hover, QTabBar::tab:hover, QTabBar QToolButton::hover {
+    background-color: #2d2d2d;
+}
+QPushButton:pressed, QTabBar::tab:selected, QMenu:selected, QTabBar QToolButton::selected {
+    background-color: #7d6aad;
+}
+
+QTabBar::tab {
+	padding-left: 8px;
+	width: 180px;
+	height: 32px;
+}
+QPushButton {
+	height: 32px;
+}
+
+QMenu {
+	border: none;
+}
+QMenu::item, QMenu::item::icon {
+	padding: 2px 20px 2px 20px;
+	height: 32px;
+	border: none;
+}
+
+QMainWindow, QFrame, QTabWidget, QWebView {
+	background-color: #1d1d1d;
+}
+
+QLineEdit {
+	border: 1px solid #1d1d1d;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	margin-top: 0px;
+	height: 31px;
+	
+	font-family: &quot;Gisha&quot;;
+	font-weight: bold;
+	font-size:14px;
+}
+
+QPushButton#prevBtn, QPushButton#nextBtn {
+	width: 45px;
+}
+
+QTabWidget QWidget#addTabBtn, QTabBar QToolButton {
+	height: 32px;
+	width: 36px;
+}
+QTabBar::scroller {
+    height: 32px;
+	width: 36px;
+}
+QTabBar QToolButton::right-arrow { 
+    image: url(assets/images/dark/appbar.chevron.right.png);
+}
+
+QTabBar QToolButton::left-arrow {
+    image: url(assets/images/dark/appbar.chevron.left.png);
+}
+</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>123456789 10 11 12 13</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>110</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Gisha</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Tab"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/icons/assets/images/dark/appbar.close.png</normaloff>:/icons/assets/images/dark/appbar.close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionNew_Tab">
+   <property name="icon">
+    <iconset resource="gui.qrc">
+     <normaloff>:/icons/assets/images/dark/appbar.add.png</normaloff>:/icons/assets/images/dark/appbar.add.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

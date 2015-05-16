@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file>assets/icons/icon.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>assets/images/dark/appbar.chevron.left.png</file>
+        <file>assets/images/dark/appbar.chevron.right.png</file>
+        <file>assets/images/dark/appbar.add.png</file>
+        <file>assets/images/dark/appbar.close.png</file>
+        <file>assets/images/dark/appbar.refresh.png</file>
+        <file>assets/images/dark/appbar.star.png</file>
+        <file>assets/images/dark/appbar.cog.png</file>
+        <file>assets/images/dark/appbar.printer.text.png</file>
+        <file>assets/images/dark/appbar.rocket.rotated.45.png</file>
+        <file>assets/images/dark/appbar.power.png</file>
+        <file>assets/images/dark/appbar.settings.png</file>
+    </qresource>
+    <qresource prefix="/display">
+        <file>assets/display/astro.css</file>
+        <file>assets/display/astro.html</file>
+        <file>assets/display/astro.js</file>
+        <file>assets/display/DrawSVGPlugin.js</file>
+        <file>assets/display/TweenMax.min.js</file>
+    </qresource>
+</RCC>

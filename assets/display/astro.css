@@ -1,0 +1,19 @@
+body{
+  background-color:#1d1d1d;
+  overflow:hidden;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  width:600px;
+  height:600px;
+}
+
+text{
+  fill:red;
+}
